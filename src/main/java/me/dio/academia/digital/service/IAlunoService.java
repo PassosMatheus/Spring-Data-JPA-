@@ -3,6 +3,7 @@ package me.dio.academia.digital.service;
 import me.dio.academia.digital.entity.Aluno;
 import me.dio.academia.digital.entity.form.AlunoForm;
 import me.dio.academia.digital.entity.form.AlunoUpdateForm;
+import me.dio.academia.digital.entity.form.AvaliacaoFisicaForm;
 
 import java.util.List;
 
@@ -41,4 +42,9 @@ public interface IAlunoService {
    * @param id - id do Aluno que será removido.
    */
   void delete(Long id);
+
+  @Override
+  public List<AvaliacaoFisica> getAllAvalicaoFisica(){
+    alunoRepository.getAll()
+  }
 }
