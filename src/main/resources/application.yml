@@ -6,5 +6,7 @@ spring:
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: uptade
+      ddl-auto: update
+    properties:
+      hibernate.format_sql: true
 
